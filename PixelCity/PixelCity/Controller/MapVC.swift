@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+class MapVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
