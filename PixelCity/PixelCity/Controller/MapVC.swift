@@ -161,6 +161,8 @@ extension MapVC: MKMapViewDelegate {
         
         let coordinateRegion = MKCoordinateRegion.init(center: touchpointCoordinate, latitudinalMeters: regionRadius,  longitudinalMeters: regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
+        
+        print(flickrURL(forAPIKey: apiKey, withAnnotation: annotation, andNumberOfPhotos: 40))
     }
     
     func removePin() {
